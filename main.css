@@ -1,0 +1,119 @@
+:root { 
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+h2{
+ color:var(--Cyan); 
+ margin-bottom: 3%;
+}
+.up-grid h3{
+    margin-bottom: 3%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin:20% auto 5% ;
+    width: 60%;
+  background: #fff;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+button{
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.17em;
+    background-color: var(--Bright-Yellow);
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+}
+body{  
+    font-family: 'Karla', sans-serif;
+    background-color:var(--Light-Gray);
+    height: 100vh;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.month-grid{
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 10px;
+}
+.why-grid{
+    background-color:hsl(179, 57%, 60%);
+    border-bottom-right-radius: 10px;
+    
+}
+.up-grid{
+    display: flex;
+  flex-direction: column;
+  padding:3%;
+  line-height: 1.6rem;
+}
+.up-grid h3{
+    font-weight: 500;
+    color:rgb(180, 199, 7);
+}
+.up-grid p{
+    font-weight: 400;
+    color:rgba(161, 160, 160, 0.986);
+}
+.left-right{
+    display:flex;
+    color:#fff;
+}
+.card{
+    width:50%;
+    padding:3%;
+}
+.up-grid h2{
+    font-weight: 700;
+}
+.per{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card h3{
+    margin-top: 10%;
+    font-weight: 700;
+    margin-bottom: 3%;;
+    font-size: 1.5em;
+}
+.card span{
+    font-size: 1.6em;
+    line-height: 5%;
+}
+@media only screen and (max-width:600px )
+{
+.container{
+    display:flex;
+   flex-direction: column;
+}    
+.left-right{
+    flex-direction: column;
+}
+.month-grid{
+    width: 100%;
+    border-bottom-left-radius: 0px; 
+}
+.why-grid{
+    width: 100%;
+    border-bottom-right-radius: 0px;
+}
+}
